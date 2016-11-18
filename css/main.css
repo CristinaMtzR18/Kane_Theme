@@ -1,0 +1,506 @@
+      /*** General ***/
+/*Tipo de Letra*/
+*{
+  /*La fuente que se saca de google font*/
+ font-family: 'Roboto';
+}
+/*Para titulo de las secciones*/
+.titulo {
+  font-size: 5em !important;
+  font-weight: 400;
+}
+      /*** HEADER ***/
+/*Barra de navegacion*/
+/*Quita el margen de abajo para unir secciones y elimina el efcto de puntas redondeadas*/
+header .navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+/*Cambio de color de fondo*/
+.navbar-default {
+  background-color: #27AD60;
+  border-color: #27AD60;
+  padding: 2% 5%; 
+}
+/*Cambio de color y tamaño de las opciones del menú*/
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-weight: 400; 
+}
+/*Efecto de pasar el mouse sobre las opciones de menú*/
+.navbar-default .navbar-nav > li > a:hover {
+  /*El color whitesmoke con el código de color hexadecimal #f5f5f5 es una sombra muy claro de gris*/
+  background-color: whitesmoke;
+  color: #27AD60; 
+}
+/*Al colapsar el fondo de la barra de navegacion se hace tranapartne*/
+.navbar-default .navbar-collapse {
+  border-color: transparent; 
+}
+/*Efecto de pasar el mouse sobre las opciones de menú cuandose comprime*/
+.navbar-default .navbar-toggle:hover {
+  /*El color whitesmoke con el código de color hexadecimal #f5f5f5 es una sombra muy claro de gris*/
+  background-color: whitesmoke; 
+}
+      /*** SECTION BANNER ***/
+/*Establezco mi imagen de fondo*/
+.banner {
+  background-image: url("../img/carousel-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1%;
+}
+/*Esto me ayuda a poner espacio entre el titulo y el parrafo*/
+.banner h2 {
+  margin-bottom: 4%;
+}
+/*Se modifica el parrafo*/
+.banner p {
+  line-height: 35px;
+  font-size: 1.8em;
+  /*Linea de la letra normal, sin el se hace muy gruesa*/
+  font-weight: normal;
+  padding: 0% 4%;
+}
+      /*** SECTION PALETA DE COLORES ***/
+/*acquarella. Palabra italina que se refiere a la pintura sobre cartulina con colores diluidos en agua*/
+.acquarella hr {
+  border-top: 1px solid #2C3E50; 
+}
+/*Bloque de color, tamaño y margenes*/
+.acuarela {
+  display: inline-block;
+  width: 180px;
+  height: 110px;
+  margin: 10px -4px 3px; 
+}
+/*Inicia colores de la paleta, es preferible usar selectores que ids para llevar un orden
+entre las lineas de colores*/
+/*Primera fila*/
+/*first-child se usa para aplicar el estilo unicamente a los elementos que son los primeros
+hijos. "primera" es padre de "acuarela"*/
+.primera .acuarela:first-child {
+    background-color: #69D2E7; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.primera .acuarela:nth-child(2) {
+    background-color: #A7DBDB; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.primera .acuarela:nth-child(3) {
+  background-color: #E0E4CC; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.primera .acuarela:nth-child(4) {
+  background-color: #F38630; 
+}
+/*last-child se usa para aplicar el estilo unicamente a los elementos que son los ultimos
+hijos*/
+.primera .acuarela:last-child {
+  background-color: #FA6900; 
+}
+/*Segunda fila*/
+/*First-child se upas para aplicar el estilo unicamente a los elementos que son los primeros
+hijos*/
+.segunda .acuarela:first-child {
+  background-color: #E94C6F; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.
+ Se necesita cambiar de color de letra por el tipo del color de fondo*/
+.segunda .acuarela:nth-child(2) {
+  background-color: #542733;
+  color: white;
+  font-weight: normal; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.segunda .acuarela:nth-child(3) {
+  background-color: #5A6A62; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.segunda .acuarela:nth-child(4) {
+  background-color: #C6D5CD; 
+}
+/*last-child se usa para aplicar el estilo unicamente a los elementos que son los ultimos
+hijos*/
+.segunda .acuarela:last-child {
+  background-color: #FDF200;
+}
+/*Tercera fila*/
+/*First-child se upas para aplicar el estilo unicamente a los elementos que son los primeros
+hijos*/
+.tercera .acuarela:first-child {
+  background-color: #DB3340; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.tercera .acuarela:nth-child(2) {
+  background-color: #E8B71A;
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.tercera .acuarela:nth-child(3) {
+  background-color: #F7EAC8;
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.tercera .acuarela:nth-child(4) {
+  background-color: #1FDA9A; 
+}
+/*last-child se usa para aplicar el estilo unicamente a los elementos que son los ultimos
+hijos*/
+.tercera .acuarela:last-child {
+  background-color: #28ABE3; 
+}
+/*Cuarta fila*/
+/*First-child se upas para aplicar el estilo unicamente a los elementos que son los primeros
+hijos*/
+.cuarta .acuarela:first-child {
+  background-color: #588C73;
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.cuarta .acuarela:nth-child(2) {
+  background-color: #F2E394; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.cuarta .acuarela:nth-child(3) {
+  background-color: #F2AE72; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.cuarta .acuarela:nth-child(4) {
+  background-color: #D96459; 
+}
+/*last-child se usa para aplicar el estilo unicamente a los elementos que son los ultimos
+hijos*/
+.cuarta .acuarela:last-child {
+  background-color: #8C4646; 
+}
+/*Quinta fila*/
+/*First-child se upas para aplicar el estilo unicamente a los elementos que son los primeros
+hijos*/
+.quinta .acuarela:first-child {
+  background-color: #D0C91F; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.quinta .acuarela:nth-child(2) {
+  background-color: #85C4B9; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.quinta .acuarela:nth-child(3) {
+  background-color: #008BBA; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.quinta .acuarela:nth-child(4) {
+  background-color: #DF514C; 
+}
+/*last-child se usa para aplicar el estilo unicamente a los elementos que son los ultimos
+hijos*/
+.quinta .acuarela:last-child {
+  background-color: #DC403B; 
+}
+      /*** SECTION ABOUT US ***/
+/*Para mi padre contenedor de metricas*/
+.barras {
+  margin-top: 8%; 
+}
+/*Medir mi barra de progreso*/
+.progress {
+  border-radius: 0;
+  height: 10px;
+  border: 2px solid #F5F5F5;
+  margin-bottom: 0; 
+}
+/*Color para medir el porcentaje del progreso*/
+.progress-bar-warning {
+  background-color: #E67E22; 
+}
+/*Cambiar el ancho de la imagen*/
+.agencia{
+  width: 75%;
+  margin-left: 10%; 
+}
+      /*** SECTION SERVICIOS ***/
+/*Tamaño de ancho, padding y margen no solo para SERVICIOS, tambien para otras secciones*/
+.bg-gray, .miembros .bg-gray, footer .bg-gray {
+  padding: 12%;
+  margin: 3% 0%;
+  width: 90%; 
+}
+/*Efecto de pasar el mousse sobre los elementos, usando alfa para no afectar a los elementos*/
+.bg-gray:hover, .miembros .bg-gray:hover, footer .bg-gray:hover {
+  background: rgba(0, 0, 0, 0.4); 
+}
+/*Otro efecto de hover sobre subtitulo*/
+.bg-gray:hover h3, .miembros .bg-gray:hover h3, footer .bg-gray:hover h3 {
+  color: #E67E22; 
+}
+/*Efecto hover para las lineas hechas con hr*/
+.bg-gray:hover hr, .miembros .bg-gray:hover hr, footer .bg-gray:hover hr {
+  border-top: 1px solid white; 
+}
+/*Efecto hover para las imagenes grandes, los iconos*/
+.bg-gray:hover .bg-icon, .miembros .bg-gray:hover .bg-icon, footer .bg-gray:hover .bg-icon {
+  background-image: none;
+  background-color: #8F5F38;
+  /*Código para rotar un poco la imagen*/
+  transform: rotate(45deg); 
+}
+/*Color un poco gris para los <p> de las secciones que tienen fondo verde*/
+.bg-gray p, .miembros .bg-gray p, footer .bg-gray p {
+  color: #98BAA7; 
+}
+/*Cambio de linea para las secciones en comun*/
+.bg-gray hr, .miembros .bg-gray hr, footer .bg-gray hr {
+  border-top: 1px solid #27AD61; 
+}
+/*Imagen de fondo para los iconos en las secciones con fondo verde*/
+.bg-gray .bg-icon, .miembros .bg-gray .bg-icon, footer .bg-gray .bg-icon {
+  background-image: url("../img/icon-bg.png");
+  background-color: #2C3E50;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+/*Establecimiento de ancho y margnes para las imagenes de las secciones de fondo verde*/
+.bg-gray .bg-icon img, .miembros .bg-gray .bg-icon img, footer .bg-gray .bg-icon img {
+  width: 80%;
+  margin: auto; 
+}
+/*Mi boton es la clase que acomoda los estilos a como yo quiero*/
+.myBotton{
+  background-color: #443E44;
+  border: none;
+  font-size: 1.2em;
+  padding: 1% 1.5%;
+  color: white; 
+}
+      /*** MIEMBROS DE EQUIPO ***/
+/*Modifico el ancho de la imagen del miembro. img-responsive no ayuda mucho*/
+.miembros img{
+  width: 70%; 
+}
+/*Colocar la foto del miembro del equipo*/
+.descripcion .img-wo{
+  width: 140px;
+  height: 140px;
+  background-image: url("../img/team/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto; 
+}
+/*Modificar color de texto de las secciones verde a un tipo gri*/
+.descripcion .line-text{
+  color: #2C3E50; 
+}
+/*modificacion del hr de las secciones verdes para que sean punteadas y color girs ligeramente maás oscuro*/
+.descripcion hr{
+  border-top: 1px dashed #98BAA7; 
+}
+/*cambio de color de mis parrafos a un color gris*/
+.descripcion p{
+  font-size: 0.9em;
+  color: #98BAA7; 
+}
+/*Cambio de tamaño en los iconos de redes sociales*/
+.descripcion .red-social{
+  font-size: 2em;
+  margin-top: 8%; 
+}
+/*Cambio de color de los iconos de redes sociales*/
+.descripcion .red-social a{
+  color: #98BAA7; 
+}
+/*Efecto del hover al pasar por el icono usando un ligero gris*/
+.descripcion .red-social a:hover{
+  color: whitesmoke; 
+}
+      /*** SECCION PRECIOS ***/
+/*Experimentando cambio de tactica, Poner clase a la seccion*/
+.precio .green{
+  border: 1px solid #27AD60;
+  width: 100%;
+  margin: 40% 0% 20%; 
+}
+/*Efecto al pasar el mouse sobre mi tabla*/
+.precio .green:hover{
+  border: 1px solid #E67E22;
+  transform: translateY(-50px); 
+}
+/*Cambio de padding al no tener color de fondo*/
+.precio .green .no-bg td{
+  padding: 3%; 
+}
+/*Cambio de color de texto y tambaño*/
+.precio .green .no-bg:first-child{
+  color: #98BAA7;
+  font-size: 1.5em; 
+}
+/*Uso de padding interna en la tabla*/
+.precio .green .no-bg:first-child td{
+  padding: 5%; 
+}
+/*Efecto de cambio de color*/
+.precio .green .bg-brown{
+  background-color: #8F5F38; 
+}
+/*Usando mas padding interno en mi tabla*/
+.precio .green .bg-brown td{
+  padding: 3%; 
+}
+/* Cambio de colores verde y gris de letra*/
+.precio .green .bg-brown:first-child{
+  color: #98BAA7;
+  font-size: 1.5em; 
+}
+/*Padding a mi tabla*/
+.precio .green .bg-brown:first-child td{
+  padding: 5%; 
+}
+/*Cambio de color de fondo entre verde y blanco*/
+.precio .green .bg-white{
+  background-color: white;
+  color: black; 
+}
+/*Modificacion de mi padding dentro de la tabla con las clases señaladas*/
+.precio .green .bg-white td{
+  padding: 3%;
+}
+/*Cambio de color de fondo y tamaño de letra*/
+.precio .green .bg-green{
+  background-color: #27AD60;
+  font-size: 0.9em; 
+}
+/*Modificacion de paddin en mis clases de green*/
+.precio .green .bg-green td{
+  padding: 5%; 
+}
+/*Cambio de letra*/
+.precio .green .bg-green span {
+  font-size: 3.8em; 
+}
+/*Modificacion del boton para las clases verde*/
+.precio .green button{
+  background-color: #443E44;
+  border: none;
+  font-size: 1.2em;
+  padding: 1% 1.5%;
+  color: white;
+  padding: 3% 5%;
+  margin: 15% 0%; 
+}
+      /*** SECCION COMENTARIOS DE CLIENTES ***/
+/*Estilos para mi parrafo del comentario*/
+.parrafo {
+  color: #B0B2B4;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 400;
+  padding: 0% 20%;
+  margin: 5% 0% 2%; 
+}
+/*Estilos para el nombre del autor*/
+.parrafo .text-orange {
+    color: #E67E22;
+    font-style: normal; 
+}
+      /*** SECCION CONTACTO ***/
+/*Margin*/
+.formulario form {
+  margin: 4% auto;
+  width: 65%; 
+}
+/*Modificar text area*/
+.formulario form textarea {
+    height: 150px; 
+}
+/*Modificando mi boton*/
+.formulario form .btn-default {
+  background-color: #443E44;
+  border: none;
+  font-size: 1.2em;
+  padding: 1% 1.5%;
+  color: white; 
+}
+/*Para el <p> utilizo los datos requeridos*/
+.formulario form p:last-child {
+    text-align: left; 
+}
+
+      /*** SOCIALES ***/
+.image {
+  background-image: url("../img/img-divider-img.jpg");
+  background-position: 30% 35%;
+  height: 20vh; }
+
+.social {
+  background-image: url("../img/img-divider-img.jpg");
+  background-size: cover;
+  background-position: 20% 10%;
+  height: 55vh;
+  padding-top: 2%; }
+  .social a {
+    font-size: 7em;
+    margin-right: 1.5%; }
+      /*** FOOTER ***/
+/*NOTA: De aqui en adelante me perdi en entre tantos selectores*/
+footer {
+  padding: 1% 0%; 
+}
+footer p {
+  font-size: 1.1em; 
+}
+footer .news .input-group-sm > .input-group-addon {
+  line-height: 0;
+  color: #E67E22; 
+}
+footer .news button {
+  background-color: #443E44;
+  border: none;
+  font-size: 1.2em;
+  padding: 1% 1.5%;
+  color: white;
+  font-size: 1.1em;
+  padding: 2% 3%;
+  margin-top: 6%;
+}
+footer .last-row {
+  margin-top: 2%; 
+}
+footer .last-row p {
+  float: left;
+  color: #2C3E50; 
+}
+footer .last-row p a {
+  margin-left: 5px; 
+}
+footer .last-row .back {
+  float: right; 
+}
+    /*** UTILIDADES***/
+/*Colores de texto*/
+.text-white{
+  color: white !important;
+}
+/*Colores de fondo*/
+.bg-blue{
+  background-color: #2C3E50;
+}
+.bg-green {
+  background-color: #27AD60;
+}
+/*Margin*/
+.mgt-15{
+  margin-top: 15%; 
+}
+/*Padding*/
+.pd-4-0{
+padding: 4% 0%; 
+}
+.pd-4{
+padding: 4%; 
+}
+
+.pd-1{
+padding: 1%; 
+}
