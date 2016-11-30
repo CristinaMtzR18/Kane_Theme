@@ -16,31 +16,17 @@ header .navbar {
   border-radius: 0;
   margin-bottom: 0;
 }
-/*Cambio de color de fondo*/
-.navbar-default {
-  background-color: #27AD60;
-  border-color: #27AD60;
-  padding: 2% 5%; 
+.bggreen{
+  background-color: #26AD5F;
 }
-/*Cambio de color y tamaño de las opciones del menú*/
-.navbar-default .navbar-nav > li > a {
-  color: white;
-  font-weight: 400; 
+.text-whit{
+  border: white solid 3px;
 }
 /*Efecto de pasar el mouse sobre las opciones de menú*/
 .navbar-default .navbar-nav > li > a:hover {
   /*El color whitesmoke con el código de color hexadecimal #f5f5f5 es una sombra muy claro de gris*/
   background-color: whitesmoke;
   color: #27AD60; 
-}
-/*Al colapsar el fondo de la barra de navegacion se hace tranapartne*/
-.navbar-default .navbar-collapse {
-  border-color: transparent; 
-}
-/*Efecto de pasar el mouse sobre las opciones de menú cuandose comprime*/
-.navbar-default .navbar-toggle:hover {
-  /*El color whitesmoke con el código de color hexadecimal #f5f5f5 es una sombra muy claro de gris*/
-  background-color: whitesmoke; 
 }
       /*** SECTION BANNER ***/
 /*Establezco mi imagen de fondo*/

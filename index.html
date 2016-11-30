@@ -15,37 +15,34 @@
     <link rel="shortcut icon" href="img/icons/favicon.ico"> <!-- "shortcut icon" nos indicaque es tipo icono, relación -->
     <!-- Letras importadas de Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,400italic,700' rel='stylesheet' type='text/css'>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- *Estilos* -->
-    <link rel="stylesheet" href="css/materialize-src">
     <link href="./css/bootstrap.css" rel="stylesheet">
     <!-- Css main para mis propios estilos -->
     <link href="./css/main.css" rel="stylesheet">
     <!-- Css para manejo de media queries -->
     <link href="./css/queries.css" rel="stylesheet">
-    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   </head>
   <body>
     <!-- Escribe tu código HTML aquí -->
     <!-- Inicia HEADER -->
     <header>
     <!-- Inicia Barra de Navegacion -->
-        <nav class="navbar navbar-default" role="navigation">
-            <!-- El logotipo y el icono que despliega el menú se agrupan para mostrarlos mejor en los dispositivos móviles -->
-            <div class="navbar-header">
-                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                    <span class="sr-only">Desplegar navegación</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+        <nav class="navbar mg-0" role="navigation">
+            <!--HAMBURGER-->
+            <div class="navbar-header bggreen">
+                <button type="button" class="navbar-toggle pt-5  text-whit" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar text-white"></span>
+                    <span class="icon-bar text-white"></span>
+                    <span class="icon-bar text-white"></span>
                 </button>
-                <!-- Logotipo -->
-                <a href="#"><img src="img/logo.png"></a>
+                <a class="navbar-brand hvr-grow" href="index.html"><img src="img/logo.png" alt="Kane"></a>
             </div>
-            <!-- Agrupar los enlaces de navegación, los formularios y cualquier otro elemento que se pueda ocultar al minimizar la barra -->
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About</a></li>
+            <!--LIST -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse bggreen">
+                <ul class="nav navbar-nav navbar-right pt-2">
+                    <li><a href="#intro">About</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#price">Price</a></li>
@@ -432,7 +429,7 @@
         <div class="container">
             <div class="row">
                 <!-- Por ahora escribir las cuatro medidas para no confundirse -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <div class="col-xs-12 visible-lg text-center">
                     <!-- Titulo de la sección -->
                     <h2 class="titulo text-white mgt-15">WHAT OUR CLIENTS SAY</h2>
                     <hr size="1" width="300px">
@@ -491,15 +488,15 @@
             </div>
         </div>
     </section>
-    <section class="image">
+    <section class="image visible-lg">
     </section>
     <!-- Termina CONTACTO -->
     <!-- Inicia section REDES SOCIALES -->
-    <section class="imagen social" id="facts">
+    <section class="imagen social visible-lg" id="facts">
         <div class="container">
            <div class="row">
                 <!-- Por ahora escribir las cuatro medidas para no confundirse -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 visible-lg">
                     <div class="container text-center">
                         <a href="#"><i class="fa fa-facebook-square"></i></a>
                         <a href="#"><i class="fa fa-twitter-square"></i></a>
@@ -561,12 +558,5 @@
     <!-- BOOTSTRAP JAVASCRIPT -->
     <script type="text/javascript" src="./js/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".button-collapse").sideNav();
-        })
-    </script>
 </body>
 </html>
